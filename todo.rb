@@ -128,15 +128,15 @@ Specify command after help for specific command help."
 		first_list.save
 
 	when "delete" then
-		puts "Which task number would you like to delete?"
+		puts "Which task number(s) would you like to delete?"
 		p = STDIN.gets.chomp.to_i
 		first_list.delete(p)
 		first_list.save
 		#as a user i can delete multiple tasks at once
 		#-change to "Which task number(s)..."
-		#-gather multiple discreet intigers from input
-		#-convert intigers to strings
-		#-delete task associated with each intiger
+		#-gather multiple discreet digits from input
+		#-convert digit strings to integers
+		#-delete task associated with each integer
 		#-save file at end
 
 	else puts "Use 'todo help' for a list of commands."
