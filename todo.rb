@@ -133,8 +133,11 @@ Specify command after help for specific command help."
 		first_list.delete(p)
 		first_list.save
 		#as a user i can delete multiple tasks at once
-		#change to "Which task number(s)..."
-		#add multiple number deletion in one call
+		#-change to "Which task number(s)..."
+		#-gather multiple discreet intigers from input
+		#-convert intigers to strings
+		#-delete task associated with each intiger
+		#-save file at end
 
 	else puts "Use 'todo help' for a list of commands."
 
